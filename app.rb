@@ -35,9 +35,9 @@ class App < Sinatra::Base
       answer = @num1 + @num2
     elsif @operation = "subtract"
       answer = @num2 - @num1
-    elsif @operation = 'multiply'
+    elsif @operation = "multiply"
       answer = @num1 * @num2
-    elsif @operation = 'divide'
+    elsif @operation = "divide"
       answer = @num1 / @num2
     else
       answer = "Unable to perform this operation"
