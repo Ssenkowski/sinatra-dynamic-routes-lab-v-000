@@ -17,4 +17,11 @@ class App < Sinatra::Base
     "#{@phrase}"
   end
 
+  get '/:operation/:number1/:number2' do
+    @operation = params[:operation]
+    @num1 = params[:number1]
+    @num2 = params[:number2]
+    "#{@num1}#{@operation}#{@num2}"
+  end
+
 end
